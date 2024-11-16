@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from './components/Header';
 import MainData from './components/MainData';
-import Spot from './components/Spot';
+import RequestSpot from './components/RequestSpot';
 import AboutCompany from './components/AboutCompany';
 import Footer from './components/Footer';
 import AboutProductHome from './components/AboutProductHome';
@@ -15,7 +15,7 @@ const App = () => {
                 <Header />
                 <Routes>
                     <Route path="/" element={<MainData />} />
-                    <Route path="/requestSpot" element={<Spot />} />
+                    <Route path="/requestSpot" element={<RequestSpot />} />
                     <Route path="/about" element={<AboutCompany />} />
                     <Route path='/features' element={<AboutProductHome />} />
                 </Routes>

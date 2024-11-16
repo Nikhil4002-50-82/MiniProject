@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Spot = () => {
+const RequestSpot = () => {
   return (
     <div className='h-[40vh] pt-[4.5em]'>
       
@@ -8,4 +8,4 @@ const Spot = () => {
   )
 }
 
-export default Spot;
+export default RequestSpot;
