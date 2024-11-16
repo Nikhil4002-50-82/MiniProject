@@ -8,7 +8,7 @@ const Header = () => {
             <h1 className='text-4xl mr-10 items-center font-semibold'>ZoomSpot</h1>
             <ul className='flex w-full items-center '>
                 <li className='mr-5'>
-                    <select name="" id="" className='focus:outline-none'>
+                    <select name="" id="" className='bg-white focus:outline-none'>
                         <option value="">Company</option>
                         <option value="">Go to About</option>
                         <option value="">Features</option>
