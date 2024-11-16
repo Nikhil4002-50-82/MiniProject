@@ -3,7 +3,7 @@ import ProductComponentHome from './ProductComponentHome';
 
 const AboutProductHome = () => {
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center items-center pt-[4.5em]'>
         <h1 className='font-semibold text-[#0085AD] mb-2 '>Types of Products</h1>
         <p className='text-4xl font-medium mb-4'>Our Parking Services</p>
         <div className='grid grid-cols-3 gap-2 p-[5em] pt-[3em]'>
