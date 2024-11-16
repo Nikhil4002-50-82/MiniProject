@@ -8,7 +8,7 @@ const Header = () => {
     
     function handleChange(event) {
         const value = event.target.value;
-        if (value) navigate(value); // Navigate only if value is not empty
+        if (value)navigate(value);
     }
 
     return (
@@ -23,14 +23,8 @@ const Header = () => {
                             <option value="/features">Features</option>
                         </select>
                     </li>
-                    <li className='mr-5'>
-                        <select name="" id="" className='bg-white focus:outline-none' onChange={handleChange} defaultValue="">
-                            <option value="/">Services</option>
-                            <option value="/requestSpot">Request Spot</option>
-                            <option value="/registerSpot">Register Spot</option>
-                        </select>
-                    </li>
-                    <li className='mr-5'>FAQ</li>
+                    <li className='mr-5'><a href="/requestSpot">Request Spot</a></li>
+                    <li><a href="/registerSpot">Register Spot</a></li>
                 </ul>
             </div>
             <div className='flex'>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ProductComponentAbout = ({title,description}) => {
   return (
@@ -9,4 +9,4 @@ const ProductComponentAbout = ({title,description}) => {
   )
 }
 
-export default ProductComponentAbout
+export default ProductComponentAbout;

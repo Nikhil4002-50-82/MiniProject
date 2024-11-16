@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { PiPhoneCallFill } from "react-icons/pi";
 
 const Footer = () => {
@@ -22,7 +23,9 @@ const Footer = () => {
         <div className='p-3'>
             <h1 className='text-3xl mr-10 mb-4 items-center '>Contact Info</h1>
             <p className='text-gray-400'>Customer Service:</p>
+            <p className='text-gray-400 mt-2 flex items-center'><PiPhoneCallFill className='text-blue-600 text-4xl'/>+91 76315 44765</p>
             <p className='text-gray-400 mt-2 flex items-center'><PiPhoneCallFill className='text-blue-600 text-4xl'/>+91 77952 78310</p>
+            <p className='text-gray-400 mt-2 flex items-center'><PiPhoneCallFill className='text-blue-600 text-4xl'/>+91 00000 00000</p>
         </div>
     </div>
     <div>
