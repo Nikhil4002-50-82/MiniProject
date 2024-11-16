@@ -9,9 +9,8 @@ const App = () => {
         <Header />
         <MainData />
         <Footer />
-    </div>
-    
-  )
+    </div> 
+  );
 }
 
 export default App;
