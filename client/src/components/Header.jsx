@@ -16,7 +16,7 @@ const Header = () => {
                     </select>
                 </li>
                 <li className='mr-5'>
-                    <select name="" id="" className='focus:outline-none'>
+                    <select name="" id="" className='bg-white focus:outline-none'>
                         <option value="">Services</option>
                         <option value="">Request Spot</option>
                         <option value="">Register Spot</option>
