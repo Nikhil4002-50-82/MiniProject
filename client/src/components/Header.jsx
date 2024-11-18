@@ -17,14 +17,14 @@ const Header = () => {
                 <h1 className='text-4xl mr-10 items-center font-semibold'>ZoomSpot</h1>
                 <ul className='flex w-full items-center'>
                     <li className='mr-5'>
-                        <select name="" id="" className='bg-white focus:outline-none' onChange={handleChange} defaultValue="">
+                        <select name="" id="" className='bg-white focus:outline-none font-semibold text-lg' onChange={handleChange} defaultValue="">
                             <option value="/">Company</option>
                             <option value="/about">Go to About</option>
                             <option value="/features">Features</option>
                         </select>
                     </li>
-                    <li className='mr-5'><a href="/requestSpot">Request Spot</a></li>
-                    <li><a href="/registerSpot">Register Spot</a></li>
+                    <li className='mr-5 font-semibold text-lg'><a href="/requestSpot">Request Spot</a></li>
+                    <li className='font-semibold text-lg'><a href="/registerSpot">Register Spot</a></li>
                 </ul>
             </div>
             <div className='flex'>
