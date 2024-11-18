@@ -4,7 +4,7 @@ import { PiPhoneCallFill } from "react-icons/pi";
 
 const Footer = () => {
   return (
-    <div><div className='grid grid-rows-[1fr_1fr] gap-5 p-[3em] bg-[#1F2E3B] text-white'>
+    <div><div className='grid grid-rows-[4fr_3fr] gap-5 p-[3em] bg-[#1F2E3B] text-white'>
     <div className=' grid grid-cols-3 gap-10'>
         <div className='p-3'>
             <h1 className='text-4xl mr-10 mb-4 items-center'>ZoomSpot</h1>
@@ -32,11 +32,9 @@ const Footer = () => {
         <h1 className='text-3xl mr-10 mb-4 items-center'>Discover</h1>
         <ul className='text-gray-400 list-disc'>
             <li className='mb-1 hover:text-[#FFE08A] marker:text-[#FFE08A]'>Features</li>
-            <li className='mb-1 hover:text-[#FFE08A] marker:text-[#FFE08A]'>Blogs</li>
             <li className='mb-1 hover:text-[#FFE08A] marker:text-[#FFE08A]'>Request Spot</li>
             <li className='mb-1 hover:text-[#FFE08A] marker:text-[#FFE08A]'>Register Spot</li>
-            <li className='mb-1 hover:text-[#FFE08A] marker:text-[#FFE08A]'>FAQ</li>
-            <li className='mb-1 hover:text-[#FFE08A] marker:text-[#FFE08A]'>Contact Us</li>
+            <li className='mb-0 hover:text-[#FFE08A] marker:text-[#FFE08A]'>Contact Us</li>
         </ul>
     </div>
 </div>
