@@ -14,14 +14,14 @@ const Home = () => {
     <div className='w-[100%] h-full pt-[4.5em]'>
         <div className='p-[5em] pl-[10em]'>
             <div className='w-[60%] flex justify-around shadow-custom rounded-xl'>
-              <div className={`flex flex-col p-5 justify-center items-center ${findClicked?'text-[#0085AD]':''}`} onClick={()=>{
+              <div className={`flex flex-col p-5 justify-center items-center cursor-pointer ${findClicked?'text-[#0085AD]':''}`} onClick={()=>{
                 setRentClicked(false);
                 setFindClicked(true);
               }}>
                 <FaCar className='text-2xl mb-4' />
                 <p>Find Spot</p>
               </div>
-              <div className={`flex flex-col p-5 justify-center items-center ${rentClicked?'text-[#0085AD]':''}`} onClick={()=>{
+              <div className={`flex flex-col p-5 justify-center items-center cursor-pointer ${rentClicked?'text-[#0085AD]':''}`} onClick={()=>{
                 setFindClicked(false);
                 setRentClicked(true);
               }}>

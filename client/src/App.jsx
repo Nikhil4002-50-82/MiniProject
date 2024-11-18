@@ -10,7 +10,7 @@ import AboutProductHome from './components/AboutProductHome';
 
 const App = () => {
     return (
-        <div>
+        <div className='font-custom'>
             <BrowserRouter future={{ v7_relativeSplatPath: true }}>
                 <Header />
                 <Routes>

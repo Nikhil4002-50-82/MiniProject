@@ -14,11 +14,13 @@ const Header = () => {
     return (
         <div className='w-[100%] h-[4.5em] p-4 pl-10 pr-10 z-10 bg-white flex justify-between items-center fixed'>
             <div className='flex'>
-                <h1 className='text-4xl mr-10 items-center font-semibold'>ZoomSpot</h1>
+                <h1 className='text-4xl mr-10 items-center font-semibold cursor-pointer' onClick={()=>{
+                    navigate("/");
+                }}>ZoomSpot</h1>
                 <ul className='flex w-full items-center'>
                     <li className='mr-5'>
                         <select name="" id="" className='bg-white focus:outline-none font-semibold text-lg' onChange={handleChange} defaultValue="">
-                            <option value="/">Company</option>
+                            <option value="">Menu</option>
                             <option value="/about">Go to About</option>
                             <option value="/features">Features</option>
                         </select>
