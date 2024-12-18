@@ -39,7 +39,7 @@ const SearchProject = () => {
   );
 
   return (
-    <div className="h-[auto] w-[100%] pt-[6em] flex-col items-center justify-center">
+    <div className="h-[auto] pt-[6em] ml-[7em]">
       {Array.isArray(data) && data.length > 0 ? (
         data.map(card) // Map over the fetched data
       ) : (
