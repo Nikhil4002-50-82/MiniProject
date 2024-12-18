@@ -6,10 +6,8 @@ import { topp, location } from './context/reqContext';
 
 const SearchProject = () => {
   const [data, setData] = useState([]); // State to hold the fetched data
-  const [error, setError] = useState(null);
   const { loc } = useContext(location);
   const { top } = useContext(topp);
-  const [res, setRes] = useState([]);
 
   const getData = async () => {
     try {
@@ -33,6 +31,7 @@ const SearchProject = () => {
       key={list.id} // Ensure a unique key for each item
       name={list.name}
       top={list.typeofpak}
+      phNum={list.phnum}
       mainLoc={list.mainadress}
       subLoc={list.subaddress}
       price={list.price}
@@ -40,7 +39,7 @@ const SearchProject = () => {
   );
 
   return (
-    <div className="h-[auto] pt-[6em]">
+    <div className="h-[auto] w-[100%] pt-[6em] flex-col items-center justify-center">
       {Array.isArray(data) && data.length > 0 ? (
         data.map(card) // Map over the fetched data
       ) : (

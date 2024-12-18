@@ -4,7 +4,7 @@ import { IoLocationSharp } from "react-icons/io5";
 
 const SearchComp = ({ name, price, top, mainLoc, subLoc, phNum }) => {
   return (
-    <div className="w-[60%] mb-6 text-green-950 bg-white shadow-custom rounded-2xl mb-4 hover:border-[#008EC2] hover:border-[0.2em]">
+    <div className="w-[80%] mb-6 text-green-950 bg-white shadow-custom rounded-2xl mb-4 hover:border-[#FFE08A] hover:border-[0.2em]">
       <div className="flex justify-between">
         {/* Left Section */}
         <div className="grid grid-cols-2 grid-rows-[2fr_3fr] w-[65%] p-8 pt-4 pb-4">
@@ -46,7 +46,6 @@ const SearchComp = ({ name, price, top, mainLoc, subLoc, phNum }) => {
       </div>
 
       {/* Divider */}
-      <hr className="border-[0.1em] border-gray-300 rounded-2xl" />
     </div>
   );
 };

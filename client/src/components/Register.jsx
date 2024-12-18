@@ -1,13 +1,20 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import supabase from '../../utils/supabase';
 
+import subBtnContext from './context/subBtnContext';
+
 const Register = () => {
+
+  const {subBtn,setSubBtn}=useContext(subBtnContext);
+
   const [formData, setFormData] = useState({
     name: '',
+    email: '',
     phnum: '',
     mainadress: '',
     subaddress: '',
     typeofpak: '',
+    price: '',
   });
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState(null);
@@ -33,10 +40,12 @@ const Register = () => {
       setMessage('Data inserted successfully!');
       setFormData({
         name: '',
+        email: '',
         phnum: '',
         mainadress: '',
         subaddress: '',
         typeofpak: '',
+        price: '',
       }); // Reset form data
     } catch (err) {
       console.error('Error inserting data:', err.message);
@@ -54,10 +63,12 @@ const Register = () => {
   const handleReset = () => {
     setFormData({
       name: '',
+      email: '',
       phnum: '',
       mainadress: '',
       subaddress: '',
       typeofpak: '',
+      price: '',
     });
     setMessage(null); // Clear any messages
   };
@@ -145,6 +156,17 @@ const Register = () => {
           <option value="Covered">Covered</option>
         </select>
 
+        <label htmlFor="price">Price</label>
+        <input
+          type="text"
+          name="price"
+          placeholder="Enter Price"
+          className="w-[100%] h-10 p-2 mt-2 mb-1 border-[0.1em] border-gray-300 text-gray-400 focus:outline-none focus:text-black rounded-md"
+          onChange={handleChange}
+          value={formData.price}
+          required
+        />
+
         <div className="flex justify-between mt-5">
           <button
             type="button"
@@ -155,6 +177,9 @@ const Register = () => {
           </button>
           <button
             type="submit"
+            onClick={()=>{
+              setSubBtn(true);
+            }}
             className={`h-[2.5em] w-[7em] ${
               loading
                 ? 'bg-gray-400 text-white cursor-not-allowed'
